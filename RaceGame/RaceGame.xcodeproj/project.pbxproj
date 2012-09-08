@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF4E35A15FC4BD900D622DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E35915FC4BD900D622DB /* UIKit.framework */; };
+		CEF4E35C15FC4BD900D622DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E35B15FC4BD900D622DB /* Foundation.framework */; };
+		CEF4E35E15FC4BD900D622DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E35D15FC4BD900D622DB /* CoreGraphics.framework */; };
+		CEF4E36415FC4BD900D622DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E36215FC4BD900D622DB /* InfoPlist.strings */; };
+		CEF4E36615FC4BD900D622DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E36515FC4BD900D622DB /* main.m */; };
+		CEF4E36A15FC4BD900D622DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E36915FC4BD900D622DB /* AppDelegate.m */; };
+		CEF4E377160040FD00D622DB /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E376160040FD00D622DB /* EAGLView.m */; };
+		CEF4E37A1600416100D622DB /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E3791600416100D622DB /* ES1Renderer.m */; };
+		CEF4E380160041C400D622DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E37F160041C400D622DB /* QuartzCore.framework */; };
+		CEF4E382160041CC00D622DB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4E381160041CC00D622DB /* OpenGLES.framework */; };
+		CEF4E386160042AA00D622DB /* VertexBufferObjectManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E384160042AA00D622DB /* VertexBufferObjectManager.mm */; };
+		CEF4E38A160047E300D622DB /* Particle.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E388160047E300D622DB /* Particle.mm */; };
+		CEF4E38D1600497A00D622DB /* Vector2D.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E38B1600497900D622DB /* Vector2D.mm */; };
+		CEF4E39016004B6900D622DB /* drawUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E38E16004B6900D622DB /* drawUtil.mm */; };
+		CEF4E3931600510F00D622DB /* ParticleManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E3911600510E00D622DB /* ParticleManager.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEF4E35515FC4BD900D622DB /* RaceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF4E35915FC4BD900D622DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEF4E35B15FC4BD900D622DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEF4E35D15FC4BD900D622DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEF4E36115FC4BD900D622DB /* RaceGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaceGame-Info.plist"; sourceTree = "<group>"; };
+		CEF4E36315FC4BD900D622DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF4E36515FC4BD900D622DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF4E36715FC4BD900D622DB /* RaceGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaceGame-Prefix.pch"; sourceTree = "<group>"; };
+		CEF4E36815FC4BD900D622DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEF4E36915FC4BD900D622DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEF4E375160040FD00D622DB /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		CEF4E376160040FD00D622DB /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		CEF4E3781600416100D622DB /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
+		CEF4E3791600416100D622DB /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
+		CEF4E37E1600419B00D622DB /* ESRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		CEF4E37F160041C400D622DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEF4E381160041CC00D622DB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CEF4E384160042AA00D622DB /* VertexBufferObjectManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VertexBufferObjectManager.mm; sourceTree = "<group>"; };
+		CEF4E385160042AA00D622DB /* VertexBufferObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBufferObjectManager.h; sourceTree = "<group>"; };
+		CEF4E388160047E300D622DB /* Particle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Particle.mm; sourceTree = "<group>"; };
+		CEF4E389160047E300D622DB /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		CEF4E38B1600497900D622DB /* Vector2D.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Vector2D.mm; sourceTree = "<group>"; };
+		CEF4E38C1600497900D622DB /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
+		CEF4E38E16004B6900D622DB /* drawUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = drawUtil.mm; sourceTree = "<group>"; };
+		CEF4E38F16004B6900D622DB /* drawUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawUtil.h; sourceTree = "<group>"; };
+		CEF4E3911600510E00D622DB /* ParticleManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParticleManager.mm; sourceTree = "<group>"; };
+		CEF4E3921600510F00D622DB /* ParticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF4E35215FC4BD900D622DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4E382160041CC00D622DB /* OpenGLES.framework in Frameworks */,
+				CEF4E380160041C400D622DB /* QuartzCore.framework in Frameworks */,
+				CEF4E35E15FC4BD900D622DB /* CoreGraphics.framework in Frameworks */,
+				CEF4E35A15FC4BD900D622DB /* UIKit.framework in Frameworks */,
+				CEF4E35C15FC4BD900D622DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF4E34A15FC4BD900D622DB = {
+			isa = PBXGroup;
+			children = (
+				CEF4E381160041CC00D622DB /* OpenGLES.framework */,
+				CEF4E37F160041C400D622DB /* QuartzCore.framework */,
+				CEF4E35F15FC4BD900D622DB /* RaceGame */,
+				CEF4E35815FC4BD900D622DB /* Frameworks */,
+				CEF4E35615FC4BD900D622DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF4E35615FC4BD900D622DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E35515FC4BD900D622DB /* RaceGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF4E35815FC4BD900D622DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E35915FC4BD900D622DB /* UIKit.framework */,
+				CEF4E35B15FC4BD900D622DB /* Foundation.framework */,
+				CEF4E35D15FC4BD900D622DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF4E35F15FC4BD900D622DB /* RaceGame */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E36815FC4BD900D622DB /* AppDelegate.h */,
+				CEF4E36915FC4BD900D622DB /* AppDelegate.m */,
+				CEF4E37E1600419B00D622DB /* ESRenderer.h */,
+				CEF4E3781600416100D622DB /* ES1Renderer.h */,
+				CEF4E3791600416100D622DB /* ES1Renderer.m */,
+				CEF4E375160040FD00D622DB /* EAGLView.h */,
+				CEF4E376160040FD00D622DB /* EAGLView.m */,
+				CEF4E38C1600497900D622DB /* Vector2D.h */,
+				CEF4E38B1600497900D622DB /* Vector2D.mm */,
+				CEF4E3831600427D00D622DB /* Manager */,
+				CEF4E387160047BF00D622DB /* Object */,
+				CEF4E36015FC4BD900D622DB /* Supporting Files */,
+			);
+			path = RaceGame;
+			sourceTree = "<group>";
+		};
+		CEF4E36015FC4BD900D622DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E36115FC4BD900D622DB /* RaceGame-Info.plist */,
+				CEF4E36215FC4BD900D622DB /* InfoPlist.strings */,
+				CEF4E36515FC4BD900D622DB /* main.m */,
+				CEF4E36715FC4BD900D622DB /* RaceGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF4E3831600427D00D622DB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E38F16004B6900D622DB /* drawUtil.h */,
+				CEF4E38E16004B6900D622DB /* drawUtil.mm */,
+				CEF4E385160042AA00D622DB /* VertexBufferObjectManager.h */,
+				CEF4E384160042AA00D622DB /* VertexBufferObjectManager.mm */,
+				CEF4E3921600510F00D622DB /* ParticleManager.h */,
+				CEF4E3911600510E00D622DB /* ParticleManager.mm */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		CEF4E387160047BF00D622DB /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4E389160047E300D622DB /* Particle.h */,
+				CEF4E388160047E300D622DB /* Particle.mm */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF4E35415FC4BD900D622DB /* RaceGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF4E36D15FC4BD900D622DB /* Build configuration list for PBXNativeTarget "RaceGame" */;
+			buildPhases = (
+				CEF4E35115FC4BD900D622DB /* Sources */,
+				CEF4E35215FC4BD900D622DB /* Frameworks */,
+				CEF4E35315FC4BD900D622DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaceGame;
+			productName = RaceGame;
+			productReference = CEF4E35515FC4BD900D622DB /* RaceGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF4E34C15FC4BD900D622DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = UQTimes;
+			};
+			buildConfigurationList = CEF4E34F15FC4BD900D622DB /* Build configuration list for PBXProject "RaceGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CEF4E34A15FC4BD900D622DB;
+			productRefGroup = CEF4E35615FC4BD900D622DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF4E35415FC4BD900D622DB /* RaceGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF4E35315FC4BD900D622DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4E36415FC4BD900D622DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF4E35115FC4BD900D622DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4E36615FC4BD900D622DB /* main.m in Sources */,
+				CEF4E36A15FC4BD900D622DB /* AppDelegate.m in Sources */,
+				CEF4E377160040FD00D622DB /* EAGLView.m in Sources */,
+				CEF4E37A1600416100D622DB /* ES1Renderer.m in Sources */,
+				CEF4E386160042AA00D622DB /* VertexBufferObjectManager.mm in Sources */,
+				CEF4E38A160047E300D622DB /* Particle.mm in Sources */,
+				CEF4E38D1600497A00D622DB /* Vector2D.mm in Sources */,
+				CEF4E39016004B6900D622DB /* drawUtil.mm in Sources */,
+				CEF4E3931600510F00D622DB /* ParticleManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF4E36215FC4BD900D622DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF4E36315FC4BD900D622DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF4E36B15FC4BD900D622DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEF4E36C15FC4BD900D622DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF4E36E15FC4BD900D622DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaceGame/RaceGame-Prefix.pch";
+				INFOPLIST_FILE = "RaceGame/RaceGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.bugttle.samples.RaceGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEF4E36F15FC4BD900D622DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaceGame/RaceGame-Prefix.pch";
+				INFOPLIST_FILE = "RaceGame/RaceGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blogspot.bugttle.samples.RaceGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF4E34F15FC4BD900D622DB /* Build configuration list for PBXProject "RaceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF4E36B15FC4BD900D622DB /* Debug */,
+				CEF4E36C15FC4BD900D622DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF4E36D15FC4BD900D622DB /* Build configuration list for PBXNativeTarget "RaceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF4E36E15FC4BD900D622DB /* Debug */,
+				CEF4E36F15FC4BD900D622DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF4E34C15FC4BD900D622DB /* Project object */;
+}
